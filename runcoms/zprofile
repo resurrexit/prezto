@@ -17,7 +17,7 @@ fi
 # Editors
 #
 
-export EDITOR='nano'
+export EDITOR='vim'
 export VISUAL='nano'
 export PAGER='less'
 
@@ -61,6 +61,10 @@ export LESS='-F -g -i -M -R -S -w -X -z-4'
 if (( $#commands[(i)lesspipe(|.sh)] )); then
   export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
 fi
+
+# Export PATH
+#export PATH=$PATH:/usr/lib/jvm/java-8-openjdk/bin/
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'
 
 #
 # Temporary Files
