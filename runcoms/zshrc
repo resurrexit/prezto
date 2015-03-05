@@ -13,12 +13,8 @@ fi
 # Customize to your needs...
 source /usr/share/doc/pkgfile/command-not-found.zsh
 
-export EDITOR="vim"
-export JAVA_HOME="/usr/lib/jvm/java-8-openjdk/bin/"
 export TERM=xterm-256color
 
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
-
-alias th="telnet telehack.com"
